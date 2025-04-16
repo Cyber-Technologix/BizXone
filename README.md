@@ -1,4 +1,5 @@
 The BizXone Point-of-Sale
+
 Features of the Desktop Point-of-Sale application developed in VB.NET with SQL Server for database management and DevExpress controls integration include:
 
 1. Integration with biometric attendance device and barcode reader for efficient data input.
