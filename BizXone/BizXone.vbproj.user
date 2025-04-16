@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>C:\Documents and Settings\Administrator\My Documents\My Setups\BizXone\|C:\Documents and Settings\Administrator\My Documents\My Setups\Metaillx\|C:\Documents and Settings\Administrator\My Documents\My Setups\Academy\|C:\Documents and Settings\Administrator\My Documents\My Setups\|wa\</PublishUrlHistory>
+    <InstallUrlHistory>
+    </InstallUrlHistory>
+    <SupportUrlHistory>
+    </SupportUrlHistory>
+    <UpdateUrlHistory>
+    </UpdateUrlHistory>
+    <BootstrapperUrlHistory>H:\Software Collection\Sever Collection\SQL2005\SQL2005\SQL2005</BootstrapperUrlHistory>
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+    <ProjectView>ProjectFiles</ProjectView>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+    <ErrorReportUrlHistory />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <RemoteDebugEnabled>false</RemoteDebugEnabled>
+  </PropertyGroup>
+</Project>

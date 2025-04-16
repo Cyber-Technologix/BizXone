@@ -1,0 +1,1163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8DE47A06-C90C-4B2D-81FD-4A8AEFF37C8B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BizXone.Program</StartupObject>
+    <RootNamespace>BizXone</RootNamespace>
+    <AssemblyName>ZimBiz</AssemblyName>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetZone>Internet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <ExcludedPermissions>
+    </ExcludedPermissions>
+    <ManifestCertificateThumbprint>17CA10EE704F5C162CF8274093DD45892F84BFD3</ManifestCertificateThumbprint>
+    <ManifestKeyFile>BizXone_TemporaryKey.pfx</ManifestKeyFile>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>Resources\Application02.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Documents and Settings\Administrator\My Documents\My Setups\BizXone\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ProductName>BizXone</ProductName>
+    <PublisherName>Xtra Technologies Developers</PublisherName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>44</ApplicationRevision>
+    <ApplicationVersion>5.5.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsUrl>H:\Software Collection\Sever Collection\SQL2005\SQL2005\SQL2005</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ZimBiz.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ZimBiz.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>ZimBiz.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\BizXone.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>ZimBiz.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\BizXone.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v24.1.Core, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v24.1.Core, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Docs.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v24.1.Core, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Persistent.Base.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v24.1.Export, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v24.1.Core, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Drawing.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Dialogs.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v24.1.Wizard, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v24.1.UI, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraData.v24.1, Version=24.1.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraData.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraDialogs.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v24.1.Core, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v24.1.Core, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v24.1.Extensions, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v24.1.Core, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v24.1.UI, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v24.1.Core, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v24.1.Core, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSecure.v24.1, Version=24.1.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraSecure.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="HardwareHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\HardwareHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.ConnectionUI.Dialog, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Data.ConnectionUI.Dialog.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unofficial.Sql.Server.Management.Objects.17.4.1\lib\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfoExtended, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unofficial.Sql.Server.Management.Objects.17.4.1\lib\Microsoft.SqlServer.ConnectionInfoExtended.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unofficial.Sql.Server.Management.Objects.17.4.1\lib\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unofficial.Sql.Server.Management.Objects.17.4.1\lib\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unofficial.Sql.Server.Management.Objects.17.4.1\lib\Microsoft.SqlServer.SmoExtended.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlClrProvider, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unofficial.Sql.Server.Management.Objects.17.4.1\lib\Microsoft.SqlServer.SqlClrProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unofficial.Sql.Server.Management.Objects.17.4.1\lib\Microsoft.SqlServer.SqlEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Common, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.Common.4.3.0\lib\net451\System.Data.Common.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.9.0\lib\net462\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TableDependency.SqlClient, Version=8.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TableDependency.SqlClient.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="DevExpress.Skins" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assest\Forms\Controls\frmUserPrivileges.Designer.vb">
+      <DependentUpon>frmUserPrivileges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Assest\Forms\Controls\frmUserPrivileges.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Assest\Forms\Controls\MdiDashboard.Designer.vb">
+      <DependentUpon>MdiDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Assest\Forms\Controls\MdiDashboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Assest\Forms\frmBackup.Designer.vb">
+      <DependentUpon>frmBackup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Assest\Forms\frmBackup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assest\Forms\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Assest\Forms\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assest\Forms\frmPassword.Designer.vb">
+      <DependentUpon>frmPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Assest\Forms\frmPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assest\Forms\frmUsersProfile.Designer.vb">
+      <DependentUpon>frmUsersProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Assest\Forms\frmUsersProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assest\Handlers\SQLBackupHandler.vb" />
+    <Compile Include="Assest\Helpers\FBR\FBRServiceApi.vb" />
+    <Compile Include="Assest\Helpers\FBR\FBRTransaction.vb" />
+    <Compile Include="Assest\Helpers\FBR\TransactionData.vb" />
+    <Compile Include="Assest\Helpers\PopupHelper.vb" />
+    <Compile Include="Assest\Helpers\UserAlerts.vb" />
+    <Compile Include="Project\ApplicationEvents.vb" />
+    <Compile Include="Assest\MdiRibbon.Designer.vb">
+      <DependentUpon>MdiRibbon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Assest\MdiRibbon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assest\Helpers\ProjectResources.vb" />
+    <Compile Include="Assest\Modules\Program.vb" />
+    <Compile Include="Project\Forms\Dailogs\frmAddTellers.Designer.vb">
+      <DependentUpon>frmAddTellers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Forms\Dailogs\frmAddTellers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\Forms\Dailogs\frmDepartment.Designer.vb">
+      <DependentUpon>frmDepartment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Forms\Dailogs\frmDepartment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\Forms\Dailogs\FrmRibbon.Designer.vb">
+      <DependentUpon>FrmRibbon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Forms\Dailogs\FrmRibbon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\Forms\Dailogs\frmSettings.Designer.vb">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Forms\Dailogs\frmSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\Forms\Dailogs\frmUnits.Designer.vb">
+      <DependentUpon>frmUnits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Forms\Dailogs\frmUnits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmAddAccounts.Designer.vb">
+      <DependentUpon>frmAddAccounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmAddAccounts.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmAddClients.Designer.vb">
+      <DependentUpon>frmAddClients.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmAddClients.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmAddEmployee.Designer.vb">
+      <DependentUpon>frmAddEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmAddEmployee.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmAddProduct.Designer.vb">
+      <DependentUpon>frmAddProduct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmAddProduct.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmAttendance.Designer.vb">
+      <DependentUpon>frmAttendance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmAttendance.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmExpense.Designer.vb">
+      <DependentUpon>frmExpense.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmExpense.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmInventory.Designer.vb">
+      <DependentUpon>frmInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmInventory.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmMerchandise.Designer.vb">
+      <DependentUpon>frmMerchandise.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmMerchandise.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmPayment.Designer.vb">
+      <DependentUpon>frmPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmPayment.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmReceipt.Designer.vb">
+      <DependentUpon>frmReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmReceipt.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmTeller.Designer.vb">
+      <DependentUpon>frmTeller.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmTeller.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmViewer.Designer.vb">
+      <DependentUpon>frmViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmViewer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmWarehouse.Designer.vb">
+      <DependentUpon>frmWarehouse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Forms\Views\frmWarehouse.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Products\rfrmProdManufactureList.Designer.vb">
+      <DependentUpon>rfrmProdManufactureList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Products\rfrmProdManufactureList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Warehouse\rfrmDepartmentWiseStock.Designer.vb">
+      <DependentUpon>rfrmDepartmentWiseStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Warehouse\rfrmDepartmentWiseStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Warehouse\rfrmWarehouseStock.Designer.vb">
+      <DependentUpon>rfrmWarehouseStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Warehouse\rfrmWarehouseStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Accounts\rptProfitAndLoss.Designer.vb">
+      <DependentUpon>rptProfitAndLoss.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Accounts\rptProfitAndLoss.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Employ\rptEEWorkHoursReport.Designer.vb">
+      <DependentUpon>rptEEWorkHoursReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Employ\rptEEWorkHoursReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Products\rptProductAlphabeticList.Designer.vb">
+      <DependentUpon>rptProductAlphabeticList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Products\rptProductAlphabeticList.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Accounts\rfrmAccountLedger.Designer.vb">
+      <DependentUpon>rfrmAccountLedger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Accounts\rfrmAccountLedger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Accounts\rfrmFinancialReports.Designer.vb">
+      <DependentUpon>rfrmFinancialReports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Accounts\rfrmFinancialReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Clients\rfrmClientCurrentBalance.Designer.vb">
+      <DependentUpon>rfrmClientCurrentBalance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Clients\rfrmClientCurrentBalance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Clients\rfrmClientInventoryReport.Designer.vb">
+      <DependentUpon>rfrmClientInventoryReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Clients\rfrmClientInventoryReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Clients\rfrmClientLedger.Designer.vb">
+      <DependentUpon>rfrmClientLedger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Clients\rfrmClientLedger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Employees\rfrmEEWorkHoursReport.Designer.vb">
+      <DependentUpon>rfrmEEWorkHoursReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Employees\rfrmEEWorkHoursReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Products\rfrmProdLedger.Designer.vb">
+      <DependentUpon>rfrmProdLedger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Products\rfrmProdLedger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Products\rfrmInventory.Designer.vb">
+      <DependentUpon>rfrmInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Products\rfrmInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Accounts\rptBalanceSheet.Designer.vb">
+      <DependentUpon>rptBalanceSheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Accounts\rptBalanceSheet.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Products\rptInventory.Designer.vb">
+      <DependentUpon>rptInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Products\rptInventory.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Accounts\rptAccountLedger.Designer.vb">
+      <DependentUpon>rptAccountLedger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Accounts\rptAccountLedger.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Clients\rptClientBalance.Designer.vb">
+      <DependentUpon>rptClientBalance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Clients\rptClientBalance.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Clients\rptClientInventory.Designer.vb">
+      <DependentUpon>rptClientInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Clients\rptClientInventory.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Clients\rptClientLedger.Designer.vb">
+      <DependentUpon>rptClientLedger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Clients\rptClientLedger.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Clients\rptClients.Designer.vb">
+      <DependentUpon>rptClients.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Clients\rptClients.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Products\rptProductLabelPrinting.Designer.vb">
+      <DependentUpon>rptProductLabelPrinting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Products\rptProductLabelPrinting.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Products\rptProductManufactureList.Designer.vb">
+      <DependentUpon>rptProductManufactureList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Products\rptProductManufactureList.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Products\rptProductStock.Designer.vb">
+      <DependentUpon>rptProductStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Products\rptProductStock.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Products\rptProductLedger.Designer.vb">
+      <DependentUpon>rptProductLedger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Products\rptProductLedger.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Clients\rptClientMaxLedger.Designer.vb">
+      <DependentUpon>rptClientMaxLedger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Clients\rptClientMaxLedger.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Accounts\rfrmDayTranscations.Designer.vb">
+      <DependentUpon>rfrmDayTranscations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Accounts\rfrmDayTranscations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Accounts\rfrmHeadBalance.Designer.vb">
+      <DependentUpon>rfrmHeadBalance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Accounts\rfrmHeadBalance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Accounts\rptTrialBalance.Designer.vb">
+      <DependentUpon>rptTrialBalance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Accounts\rptTrialBalance.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Accounts\rptAccountIndex.Designer.vb">
+      <DependentUpon>rptAccountIndex.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Accounts\rptAccountIndex.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Accounts\rptDayTransactions.Designer.vb">
+      <DependentUpon>rptDayTransactions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Accounts\rptDayTransactions.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Accounts\rptHeadWiseBalance.Designer.vb">
+      <DependentUpon>rptHeadWiseBalance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Accounts\rptHeadWiseBalance.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Slips\rptInventorySlip.Designer.vb">
+      <DependentUpon>rptInventorySlip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Slips\rptInventorySlip.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Slips\rptMerchandiseSlip.Designer.vb">
+      <DependentUpon>rptMerchandiseSlip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Slips\rptMerchandiseSlip.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Products\rfrmProdStock.Designer.vb">
+      <DependentUpon>rfrmProdStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Parameters\Products\rfrmProdStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Slips\rptPaymentToken.Designer.vb">
+      <DependentUpon>rptPaymentToken.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Slips\rptPaymentToken.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Warehouse\rptWarehouseStock.Designer.vb">
+      <DependentUpon>rptWarehouseStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Warehouse\rptWarehouseStock.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Warehouse\rptDepartmentWiseStock.Designer.vb">
+      <DependentUpon>rptDepartmentWiseStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Reporting\Reports\Warehouse\rptDepartmentWiseStock.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project\Settings.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assest\Forms\Controls\frmUserPrivileges.resx">
+      <DependentUpon>frmUserPrivileges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assest\Forms\Controls\MdiDashboard.resx">
+      <DependentUpon>MdiDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assest\Forms\frmBackup.resx">
+      <DependentUpon>frmBackup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assest\Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assest\Forms\frmPassword.resx">
+      <DependentUpon>frmPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assest\Forms\frmUsersProfile.resx">
+      <DependentUpon>frmUsersProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assest\MdiRibbon.resx">
+      <DependentUpon>MdiRibbon.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Forms\Dailogs\frmAddTellers.resx">
+      <DependentUpon>frmAddTellers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Forms\Dailogs\frmDepartment.resx">
+      <DependentUpon>frmDepartment.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Forms\Dailogs\FrmRibbon.resx">
+      <DependentUpon>FrmRibbon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Forms\Dailogs\frmSettings.resx">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Forms\Dailogs\frmUnits.resx">
+      <DependentUpon>frmUnits.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Forms\Views\frmAddAccounts.resx">
+      <DependentUpon>frmAddAccounts.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Forms\Views\frmAddClients.resx">
+      <DependentUpon>frmAddClients.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Forms\Views\frmAddEmployee.resx">
+      <DependentUpon>frmAddEmployee.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Forms\Views\frmAddProduct.resx">
+      <DependentUpon>frmAddProduct.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Forms\Views\frmAttendance.resx">
+      <DependentUpon>frmAttendance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Forms\Views\frmExpense.resx">
+      <DependentUpon>frmExpense.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Forms\Views\frmInventory.resx">
+      <DependentUpon>frmInventory.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Forms\Views\frmMerchandise.resx">
+      <DependentUpon>frmMerchandise.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Forms\Views\frmPayment.resx">
+      <DependentUpon>frmPayment.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Forms\Views\frmReceipt.resx">
+      <DependentUpon>frmReceipt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Forms\Views\frmTeller.resx">
+      <DependentUpon>frmTeller.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Forms\Views\frmViewer.resx">
+      <DependentUpon>frmViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Forms\Views\frmWarehouse.resx">
+      <DependentUpon>frmWarehouse.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Parameters\Products\rfrmProdManufactureList.resx">
+      <DependentUpon>rfrmProdManufactureList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Parameters\Warehouse\rfrmDepartmentWiseStock.resx">
+      <DependentUpon>rfrmDepartmentWiseStock.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Parameters\Warehouse\rfrmWarehouseStock.resx">
+      <DependentUpon>rfrmWarehouseStock.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Accounts\rptProfitAndLoss.resx">
+      <DependentUpon>rptProfitAndLoss.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Employ\rptEEWorkHoursReport.resx">
+      <DependentUpon>rptEEWorkHoursReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Products\rptProductAlphabeticList.resx">
+      <DependentUpon>rptProductAlphabeticList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Parameters\Accounts\rfrmAccountLedger.resx">
+      <DependentUpon>rfrmAccountLedger.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Parameters\Accounts\rfrmFinancialReports.resx">
+      <DependentUpon>rfrmFinancialReports.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Parameters\Clients\rfrmClientCurrentBalance.resx">
+      <DependentUpon>rfrmClientCurrentBalance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Parameters\Clients\rfrmClientInventoryReport.resx">
+      <DependentUpon>rfrmClientInventoryReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Parameters\Clients\rfrmClientLedger.resx">
+      <DependentUpon>rfrmClientLedger.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Parameters\Employees\rfrmEEWorkHoursReport.resx">
+      <DependentUpon>rfrmEEWorkHoursReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Parameters\Products\rfrmProdLedger.resx">
+      <DependentUpon>rfrmProdLedger.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Parameters\Products\rfrmInventory.resx">
+      <DependentUpon>rfrmInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Accounts\rptBalanceSheet.resx">
+      <DependentUpon>rptBalanceSheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Products\rptInventory.resx">
+      <DependentUpon>rptInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Accounts\rptAccountLedger.resx">
+      <DependentUpon>rptAccountLedger.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Clients\rptClientBalance.resx">
+      <DependentUpon>rptClientBalance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Clients\rptClientInventory.resx">
+      <DependentUpon>rptClientInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Clients\rptClientLedger.resx">
+      <DependentUpon>rptClientLedger.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Clients\rptClients.resx">
+      <DependentUpon>rptClients.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Clients\rptClientMaxLedger.resx">
+      <DependentUpon>rptClientMaxLedger.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Products\rptProductLabelPrinting.resx">
+      <DependentUpon>rptProductLabelPrinting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Products\rptProductManufactureList.resx">
+      <DependentUpon>rptProductManufactureList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Products\rptProductStock.resx">
+      <DependentUpon>rptProductStock.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Products\rptProductLedger.resx">
+      <DependentUpon>rptProductLedger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Parameters\Accounts\rfrmDayTranscations.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rfrmDayTranscations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Parameters\Accounts\rfrmHeadBalance.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rfrmHeadBalance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Accounts\rptTrialBalance.resx">
+      <DependentUpon>rptTrialBalance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Accounts\rptAccountIndex.resx">
+      <DependentUpon>rptAccountIndex.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Accounts\rptDayTransactions.resx">
+      <DependentUpon>rptDayTransactions.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Accounts\rptHeadWiseBalance.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptHeadWiseBalance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Slips\rptInventorySlip.resx">
+      <DependentUpon>rptInventorySlip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Slips\rptMerchandiseSlip.resx">
+      <DependentUpon>rptMerchandiseSlip.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Parameters\Products\rfrmProdStock.resx">
+      <DependentUpon>rfrmProdStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Slips\rptPaymentToken.resx">
+      <DependentUpon>rptPaymentToken.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Warehouse\rptWarehouseStock.resx">
+      <DependentUpon>rptWarehouseStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Reporting\Reports\Warehouse\rptDepartmentWiseStock.resx">
+      <DependentUpon>rptDepartmentWiseStock.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BaseApplicationManifest Include="My Project\app.manifest" />
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="DevExpress.BonusSkins.v24.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Data.v24.1.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Office.v24.1.Core.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Printing.v24.1.Core.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.RichEdit.v24.1.Core.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Utils.v24.1.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraBars.v24.1.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v24.1.UI.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v24.1.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraEditors.v24.1.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraGrid.v24.1.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraLayout.v24.1.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraNavBar.v24.1.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPivotGrid.v24.1.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPrinting.v24.1.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraReports.v24.1.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraRichEdit.v24.1.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraTreeList.v24.1.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraVerticalGrid.v24.1.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Application02.ico" />
+    <None Include="Resources\picture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="zkemkeeper">
+      <Guid>{FE9DED34-E159-408E-8490-B720A5E632C7}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
